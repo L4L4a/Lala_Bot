@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  lalabot:
+    build: .
+    container_name: lalabot
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - ngrok
+  ngrok:
+    image: wernight/ngrok
+    container_name: lalabot_ngrok
+    environment:
+      - NGROK_PORT=lalabot:3000
+      - NGROK_PROTOCOL=http
+    ports:
+      - "4040:4040"
