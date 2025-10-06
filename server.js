@@ -1,6 +1,6 @@
 /**
  * server.js
- * LalaBot — single-file server with 100 real commands.
+ * LalaBot — single-file server with 100 commands.
  *
  * Behavior:
  * - If an API key is present, commands fetch live data.
@@ -98,7 +98,7 @@ async function startDiscordBot() {
 
       // ---------------- Movies & TV
       if (cmd === 'movie_recommend' || cmd === 'movie_search' || cmd === 'movie_trending' || cmd === 'movie_upcoming' || cmd === 'movie_nowplaying' || cmd === 'movie_toprated') {
-        // We'll reuse TMDB endpoints depending on command
+        // Will reuse TMDB endpoints depending on command
         return await interaction.reply(await safeApiCall(async () => {
           requireKey(TMDB_API_KEY, 'TMDB');
           let url = 'https://api.themoviedb.org/3/search/movie';
