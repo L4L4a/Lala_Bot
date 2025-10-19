@@ -124,7 +124,7 @@ LalaBot is still growing — here’s a sneak peek at what’s next:
 ## 👨‍💻 Author
 
 **Elvis Kenneth**   
-🔗 [GitHub](https://github.com/L4L4a) • ✉️ elviskenneth123@gmail.com • [LinkedIn](#)
+🔗 [GitHub](https://github.com/L4L4a) • ✉️ elviskenneth123@gmail.com • [LinkedIn](http://www.linkedin.com/in/elvis-kenneth)
 
 ---
 
